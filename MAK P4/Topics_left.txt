@@ -1,0 +1,8 @@
+- ADTS:
+3) Linked List
+4) Binary Tree
+5) Data Dictionary
+
+- Recursion
+- Exeption Handling
+- File Handling
