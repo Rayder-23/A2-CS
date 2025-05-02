@@ -18,7 +18,7 @@ print("Subject:", student_info["subject"])
 
 
 # Modify a value
-student_info["age"] = 26
+student_info["age"] = 26    # this is known as the Square Bracket Notation
 
 # Add a new key-value pair
 student_info["city"] = "New York"
