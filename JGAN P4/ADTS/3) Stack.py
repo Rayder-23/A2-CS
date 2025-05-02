@@ -31,15 +31,20 @@ def pop():
     if top_of_stack > -1:   # checks if stack is empty or not
         # '2 > -1', True
         item = my_stack[top_of_stack]   # puts the top value in item
+        my_stack[top_of_stack] = None # Addition: set top value to None as it's being removed
         top_of_stack = top_of_stack -1  
         # moves top_of_stack down one value, basically ignoring the above value
         return item # returns the item removed
 
 removedValue = pop()
 print(removedValue) # C
+
 print(my_stack) # ['A', 'Z', 'C', None, None], C is still there 
 # but it is ignored as the top_of_stack pointer is below it.
+
 # check out MAK code for stack to see another angle, he also deletes the variable from the stack
+    # update, I added the code to remove it from the stack aswell now this should print:
+    # ['A', 'Z', None, None, None]
 
 
 # Info regarding the fix applied:
