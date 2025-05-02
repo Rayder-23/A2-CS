@@ -14,7 +14,8 @@ for i in range(4):
     current_node.pointer = new_node
     current_node = new_node
 
-#-------------------------------------------
+
+#--------------------------------------------Separator----------------------------------------------
 
 
 # Inserting a new Node into an ordered linked list
@@ -42,7 +43,8 @@ def insert_into_ordered_list(head,new_data):    # function to insert a new node
 ordered_list_head = insert_into_ordered_list(head, 5)
 print(ordered_list_head)
 
-#-------------------------------------------
+
+#--------------------------------------------Separator----------------------------------------------
 
 
 # Deleting a Node in an ordered linked list

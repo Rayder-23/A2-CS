@@ -15,6 +15,8 @@ for i in range(4):
     current_node = new_node
 
 
+#--------------------------------------------Separator----------------------------------------------
+
 
 # Find an element in an ordered linked list
 
