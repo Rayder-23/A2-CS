@@ -27,7 +27,7 @@ def print_linked_list(head):
 #--------------------------------------------Separator----------------------------------------------
 
 print("Before Insertion:")
-print_linked_list(head)
+print_linked_list(head) # 0 -> 2 -> 4 -> 6 -> None
 
 # Inserting a new Node into an ordered(sorted) linked list
 
@@ -53,7 +53,7 @@ def insert_into_ordered_list(head,new_data):    # function to insert a new node
     # Insert the new node into the correct positon
     new_node.pointer = current_node.pointer   # FIX: changed from next_node to pointer
     # sets the pointer of the new node to the next node
-    
+
     current_node.pointer = new_node # set the pointer of the current node to the new node
 
     return head
@@ -62,37 +62,62 @@ ordered_list_head = insert_into_ordered_list(head, 5)
 # print(ordered_list_head) # will only show the memory location of the next node
 
 print("After Insertion:")
-print_linked_list(ordered_list_head)
+print_linked_list(ordered_list_head) # 0 -> 2 -> 4 -> 5 -> 6 -> None
 
 
+#--------------------------------------------Separator----------------------------------------------
+print(" ")
 
-# #--------------------------------------------Separator----------------------------------------------
+# Find an element in an ordered linked list
 
+def find_in_ordered_list(head, target):
+    current_node = head
 
-# # Deleting a Node in an ordered linked list
+    while (current_node is not None) and (current_node.data < target):
+        current_node = current_node.pointer # FIX: changed from next_node to pointer
 
-# def delete_node(head, target):
-#     # Handle the case where the head itself needs to be deleted
-#     if (head is not None) and (head.data == target):
-#         new_head = head.next_node
-#         del head # Delete the original head
-#         return new_head
+    if (current_node is not None) and (current_node.data == target):
+        return current_node
+    else:
+        return None
     
-#     current_node = head
-#     previous_node = None
+target_value = 5
+found_node = find_in_ordered_list(head, target_value)
 
-#     # Traverse the list to find the node to be deleted
-#     while (current_node is not Node) and (current_node.data < target):
-#         previous_node = current_node
-#         current_node = current_node.next_node
+if found_node is not None:
+    print(f"Node with value {target_value} found.")
+else:
+    print(f"Node with value {target_value} not found.")
 
-#     # If the target node is found, delete it
-#     if (current_node is not None) and (current_node.data == target):
-#         previous_node.next_node = current_node.next_node
-#         del current_node
-#     else:
-#         print(f"Node with value {target} not found.")
-#     return head
+    
+#--------------------------------------------Separator----------------------------------------------
+print(" ")
 
-# target_value = 5
-# ordered_list_head = delete_node(ordered_list_head, target_value)
+# Deleting a Node in an ordered linked list
+
+def delete_node(head, target):
+    # Handle the case where the head itself needs to be deleted
+    if (head is not None) and (head.data == target):
+        new_head = head.pointer # FIX: changed from next_node to pointer
+        del head # Delete the original head
+        return new_head
+    
+    current_node = head
+    previous_node = None
+
+    # Traverse the list to find the node to be deleted
+    while (current_node is not Node) and (current_node.data < target):
+        previous_node = current_node
+        current_node = current_node.pointer # FIX: changed from next_node to pointer
+
+    # If the target node is found, delete it
+    if (current_node is not None) and (current_node.data == target):
+        previous_node.pointer = current_node.pointer # FIX: changed from next_node to pointer
+        del current_node
+    else:
+        print(f"Node with value {target} not found.")
+    return head
+
+target_value = 5
+ordered_list_head = delete_node(ordered_list_head, target_value)
+print_linked_list(ordered_list_head)    # 0 -> 2 -> 4 -> 6 -> None
