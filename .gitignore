@@ -1,2 +1,3 @@
 # Ignore all .dat files
-*.dat
+# *.dat
+# Added that cuz one of the .dat files was becoming 1.64 GB for some reason

@@ -31,13 +31,13 @@ products = [
 
 with open(file_path, 'wb') as file: # replaced "random_access_data.dat" with file_path
     for product in products:
-        address = hash(product.name) % (2**31 - 1)
+        address = hash(product.name) % (2**10 - 1)  # changed 31 to 10 due to insane 1.64GB file size
         file.seek(address)
         pickle.dump(product, file)
 
 # Reading a specific product record from the random access binary file based on the hash function
 search_product_name = "Cheese"
-search_offset = hash(search_product_name) % (2**31 - 1)
+search_offset = hash(search_product_name) % (2**10 - 1) # changed 31 to 10 due to insane 1.64GB file size
 
 with open(file_path, 'rb') as file: # replaced "random_access_data.dat" with file_path
     file.seek(search_offset)
