@@ -1,9 +1,11 @@
-# Why is exception handling needed?
+-Why is exception handling needed?
 Exception handling is particularly crucial for addressing runtime errors, as it allows programs 
 to detect and respond to unexpected issues that may occur during execution, preventing the program from 
 crashing and providing mechanisms for error diagnosis and resolution at runtime.
 
-# Different types of exception in Python:
+
+-Different types of exceptions in Python:
+
 • "10Error" is raised when an input/output operation fails due to issues like attempting to open a 
 non-existent file or writing to a read-only file.
 
