@@ -1,0 +1,23 @@
+# Why is exception handling needed?
+Exception handling is particularly crucial for addressing runtime errors, as it allows programs 
+to detect and respond to unexpected issues that may occur during execution, preventing the program from 
+crashing and providing mechanisms for error diagnosis and resolution at runtime.
+
+# Different types of exception in Python:
+• "10Error" is raised when an input/output operation fails due to issues like attempting to open a 
+non-existent file or writing to a read-only file.
+
+• "ImportError" occurs when the import statement cannot find or load the specified module, indicating
+a problem with the module's availability or correct installation.
+
+• "ValueError" is raised when a built-in operation or function receives an argument of the correct type
+but with an invalid value, indicating an inappropriate input.
+
+• "KeyboardInterrupt" is triggered when the user interrupts the execution of the program, typically
+by pressing CtrI+C in the console, halting the program abruptly.
+
+• "EOFError" occurs when an input operation, such as reading from a file, reaches the end-of-file 
+unexpectedly, indicating an attempt to read beyond the available data.
+
+• "ZeroDivisionError" is raised when attempting to divide a number by zero, which is mathematically 
+undefined and results in an error.
