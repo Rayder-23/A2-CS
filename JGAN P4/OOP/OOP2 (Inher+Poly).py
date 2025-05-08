@@ -1,4 +1,3 @@
-
 # Inheritance in OOP allows new classes (child classes) to reuse and extend the functionality of existing
 # classes (parent classes). This simplifies code maintenance, promotes code reuse, and facilitates the
 # creation of hierarchical relationships between classes, making the code more organized and easier
@@ -39,8 +38,8 @@ class GroceryProduct(Product):
         self._expiration_date = expiration_date
 
     def display_info(self):
-        super().display_info()  # calls the method of the parent class
-        print(f"Expiration Date: {self._expiration_date}" ) # polymorphism
+        super().display_info()  # calls the method of the parent class, polymorphism
+        print(f"Expiration Date: {self._expiration_date}" ) 
         # uses the parent method, then adding to it.
 
     def check_if_expired(self, current_date):
