@@ -62,3 +62,5 @@ with open("example.txt", "r") as file:
     for line in file:
         print(line.strip()) 
         # .strip() removes any leading and trailing whitespace (including \n) from a string.
+
+# To add to an Array, use .append()
