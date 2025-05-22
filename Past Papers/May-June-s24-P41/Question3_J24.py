@@ -38,7 +38,6 @@ def Dequeue():  # remove at head
 # Part D) i)
 def StoreItems():
     invalidCount = 0
-    condition = True
     for i in range(0,10):
         txt = str(input("Enter value: "))
         step1 = int(txt[0]) + int(txt[2]) + int(txt[4])
@@ -53,9 +52,7 @@ def StoreItems():
                 print("Queue is full.")
         else:
             invalidCount += 1
-            # print(f"Invalid CheckDigit(CD), for {txt}, CD: {checkDigit}. Invalid Count: {invalidCount}")
-
-        
+       
     print(f"There were {invalidCount}, items")
 
 # ii)
