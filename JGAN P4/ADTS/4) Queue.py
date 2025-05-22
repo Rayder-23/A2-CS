@@ -43,7 +43,6 @@ def remove_from_queue():
         if number_in_queue == 0:    # if queue is empty, then reset the queue
             front_of_queue = 0  # Original positions
             end_of_queue = -1   
-
         else:
             front_of_queue = front_of_queue +1 # move front up as the previous front value has been removed
 
