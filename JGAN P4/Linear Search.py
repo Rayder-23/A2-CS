@@ -7,6 +7,13 @@ for i in range(len(my_list)):
         Found = True
         break
 
+# OR
+# loop for each element inside of checking each index
+for i in my_list:
+    if i == target:
+        Found = True
+        break
+
 if Found:
     print("Target found.")
 else:

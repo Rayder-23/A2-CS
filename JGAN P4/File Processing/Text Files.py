@@ -3,9 +3,8 @@
 # Open a file in write mode ('w')
 file = open('output.txt', 'w')
 # Write a line of text to the file
-file.write("This is a line of text.")
-# Close the file
-file.close()
+file.write("This is a line of text.\n")
+file.close() # Close the file
 
 
 # Reading from a text file:
@@ -13,10 +12,11 @@ file.close()
 # Open a file in read mode ('r')
 file = open('output.txt', 'r')
 # Read a line of text from the file
-line = file. readline()
+line = file.readline()
+# file.readlines() = reads all the lines and gives them in an array
 print(line) # Prints the read line
-# Close the file
-file.close()
+file.close() # Close the file
+
 
 
 # Appending to a text file:
@@ -25,8 +25,8 @@ file.close()
 file = open('output.txt', 'a' )
 # Append a line of text to the file
 file.write("\nThis is another line of text.")
-# Close the file
-file.close()
+file.close() # Close the file
+
 
 
 

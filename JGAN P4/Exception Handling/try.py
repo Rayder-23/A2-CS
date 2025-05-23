@@ -11,3 +11,15 @@ except Exception as e:  # if any other error occurs
 
 finally:    # the finally block always runs
     print("\nThis code will always run.")
+
+# Attempt 1:-
+# Enter a number: 2
+# The result is: 5.0.
+
+# This code will always run.
+
+# # Attempt 2:-
+# Enter a number: 0
+# Error: Cannot Divide by Zero.
+
+# This code will always run.
