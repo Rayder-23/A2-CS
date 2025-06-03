@@ -4,7 +4,7 @@ This repository (a central location in which data is stored and managed.) contai
 It also includes PDF Files from Sir Zain Merchant of both P3 and P4 of the same year aswell as my own notes for P3 that I made in collaboration with a friend. In addition, the 'Extra' folder contains some helpful functions and tips that I gathered from ChatGPT with strict instructions to keep it's responses in the limits of CIE AL CS guidelines.
 
 YouTube Links to the Lectures I watched (these videos may be removed/changed over time):
--James Gan(JGAN) = https://www.youtube.com/playlist?list=PLYJ6oM_78KIMFDLe3jAp2tufc5V_my-Ev
+- James Gan(JGAN) = https://www.youtube.com/playlist?list=PLYJ6oM_78KIMFDLe3jAp2tufc5V_my-Ev
 
 -M. Ali Khan(MAK) = https://www.youtube.com/playlist?list=PLEB3ArMmGXmSGucbmUCx4PBMdpSXO8oHf
 
